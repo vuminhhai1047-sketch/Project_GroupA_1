@@ -1,11 +1,9 @@
-/* Reset cơ bản */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body căn giữa chuẩn dev */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -17,13 +15,11 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Container */
 .container {
     width: 900px;
     margin-top: 40px;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -31,12 +27,10 @@ header {
     margin-bottom: 20px;
 }
 
-/* Tiêu đề */
 header h1 {
     font-size: 28px;
 }
 
-/* Nút toggle */
 #toggle {
     border: none;
     width: 45px;
@@ -52,7 +46,6 @@ header h1 {
     transform: scale(1.1);
 }
 
-/* Main card */
 #main {
     background-color: #F5F5FA;
     padding: 20px;
@@ -61,13 +54,11 @@ header h1 {
     transition: all 0.3s ease;
 }
 
-/* Tiêu đề bài viết */
 h2 {
     margin-bottom: 15px;
     text-align: center;
 }
 
-/* Ảnh */
 #img {
     width: 100%;
     height: 400px;
@@ -76,7 +67,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Nội dung */
 p {
     font-size: 16px;
     line-height: 1.7;
