@@ -1,53 +1,83 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body căn giữa chuẩn dev */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/* Container */
 .container {
-    border: 2px solid black;
     width: 900px;
-    display: flex;
-    flex-direction: column;
-    height: 1000px;
-    margin-left: 500px;
+    margin-top: 40px;
 }
 
-#main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid white;
-    background-color: #F5F5FA;
-    width: 800px;
-    margin-left:55px;
-    border-radius: 20px;
-}
-
+/* Header */
 header {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 70px;
+    margin-bottom: 20px;
 }
 
-h2 {
-    margin-right: 150px;
+/* Tiêu đề */
+header h1 {
+    font-size: 28px;
 }
 
+/* Nút toggle */
 #toggle {
     border: none;
-    height: auto;
-    margin-left: 500px;
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 23px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eee;
+    transition: all 0.3s ease;
 }
 
+#toggle:hover {
+    transform: scale(1.1);
+}
 
-#img {
-    height: 500px;
-    width: 750px;
+/* Main card */
+#main {
+    background-color: #F5F5FA;
+    padding: 20px;
     border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
+/* Tiêu đề bài viết */
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
 
+/* Ảnh */
+#img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Nội dung */
 p {
-    font-size: larger;
-
+    font-size: 16px;
+    line-height: 1.7;
 }
